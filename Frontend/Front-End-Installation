@@ -1,0 +1,13 @@
+sudo cp index.html /usr/share/nginx/html/index.html
+sudo cp signup.html /usr/share/nginx/html/signup.html
+sudo cp addpost.html /usr/share/nginx/html/addpost.html
+sudo cp upload.html /usr/share/nginx/html/upload.html
+
+
+sudo nginx -t
+
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+sudo systemctl disable firewalld
+sudo systemctl stop firewalld
