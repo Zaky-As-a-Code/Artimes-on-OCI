@@ -1,0 +1,13 @@
+Testing Backend connectivity to DB (On BE)
+---------------------------
+Create two sessions to BE
+On the test VM run ssh -i key-be opc@10.0.2.105
+
+On the first run	 node server.js
+On the other connect ssh and run the api	curl -X POST http://localhost:3000/signup -d "username=zaky&email=zaky@artemis&password=12345"
+
+
+Connect to database and see the new user
+sudo mysql -u username -P port (3306 is the default)  -h Database-Host  -p	
+mysql> use Database-Name;	
+mysql> select * FROM users;
