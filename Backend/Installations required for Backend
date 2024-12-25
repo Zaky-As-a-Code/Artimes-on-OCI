@@ -1,0 +1,16 @@
+sudo dnf install -y mysql
+
+mkdir artemis-backend
+cd artemis-backend
+
+sudo dnf install -y npm nodejs
+npm init -y
+npm install mysql2
+
+touch server.js database.js
+mkdir routes;touch routes/signup.js
+
+npm install express sqlite3 body-parser
+
+sudo systemctl stop firewalld
+
