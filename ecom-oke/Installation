@@ -1,0 +1,7 @@
+kubectl apply -f app.yaml 
+
+
+kubectl get deploy -o wide
+
+
+kubectl get svc -o wide
